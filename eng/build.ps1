@@ -103,11 +103,6 @@ function Process-Arguments() {
     $script:binaryLog = $true
     $script:nodeReuse = $false
   }
-
-  if (!$vsDropAccessToken -and $officialBuildId) {
-    Write-Host "vsDropAccessToken must be specified for official builds"
-    exit 1
-  }
 }
 
 function Build-Repo() {
