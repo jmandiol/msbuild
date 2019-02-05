@@ -64,7 +64,7 @@ jobs:
               -officialBuildId $(Build.BuildNumber)
               -officialSkipApplyOptimizationData $(SkipApplyOptimizationData)
               /p:RepositoryName=$(Build.Repository.Name)
-              /p:RepositoryBranchName=$(Build.SourceBranchName)
+              /p:VisualStudioIbcSourceBranchName=$(Build.SourceBranchName)
               /p:VisualStudioDropAccessToken=$(System.AccessToken)
               /p:VisualStudioDropName=$(VisualStudio.DropName)
               /p:DotNetSignType=$(SignType)
